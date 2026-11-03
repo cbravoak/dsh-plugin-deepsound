@@ -1,0 +1,8 @@
+# Investigation scratch: code extracted from the DeepSeek Harness app.asar and
+# local test harnesses. Not part of the plugin and not ours to redistribute.
+_inspect/
+
+node_modules/
+*.log
+.DS_Store
+Thumbs.db

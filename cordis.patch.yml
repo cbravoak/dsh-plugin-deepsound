@@ -1,0 +1,12 @@
+# Bundle self-activation patch for dsh-plugin-deepsound.
+#
+# When this package is installed into a profile (`dsh plugin --profile <name> add`
+# or a local `file:`/`link:` dependency), this patch mounts the plugin's node half.
+# The client half (the "Sounds" settings page) is discovered automatically from the
+# `dsh.client` declaration in package.json.
+#
+# The row id below IS the settings namespace the web client edits:
+# `ctx.configForms.get("deepsound")`. Keep the two in sync.
+- insert:
+    - id: deepsound
+      name: dsh-plugin-deepsound
