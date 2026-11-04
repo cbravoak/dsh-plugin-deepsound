@@ -22,10 +22,11 @@ desde `http://127.0.0.1`) y mantiene el paquete en unos pocos KB.
 | Job finished | Una tarea en segundo plano terminó | — (solo en Completo) |
 | Session started | Se creó una sesión nueva | — (solo en Completo) |
 | Goal updated | Cambió el estado de un goal | — (solo en Completo) |
+| Model working | El modelo está pensando o ejecutando trabajo | Pulso suave cada 5 segundos |
 
 ## Perfiles de sonido
 
-- **Moderado** — lo esencial: fin de turno, errores, aprobaciones y preguntas.
+- **Moderado** — lo esencial: fin de turno, errores, aprobaciones, preguntas y un pulso tenue mientras el modelo trabaja.
 - **Completo** — todo lo anterior más subagentes, tareas en segundo plano,
   sesiones nuevas y goals.
 - **Silencio** — ningún sonido.
@@ -38,7 +39,11 @@ que pulsas **Guardar**.
 ## Sonidos disponibles
 
 `none`, `chime`, `bell`, `ding`, `pop`, `blip`, `marimba`, `piano`, `alarm`,
-`success`, `error`, `notify`.
+`success`, `error`, `notify`, `work`, `workLoop`.
+
+Para **Model working** hay dos opciones: `work` es un pulso sintetizado bajo,
+mientras que `workLoop` reproduce el audio suministrado `333.wav`. Ambas se
+repiten cada 5 segundos mientras haya al menos una sesión trabajando.
 
 Cada evento tiene un botón **Preview** para escucharlo antes de guardar.
 

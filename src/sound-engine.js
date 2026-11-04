@@ -65,6 +65,8 @@ export const SOUND_PRESETS = {
   error: [P(440, 0, 0.2, 0.45, 'triangle'), P(349.23, 0.13, 0.42, 0.45, 'triangle')],
   /** Neutral two-tone attention cue. */
   notify: [P(1174.66, 0, 0.13, 0.42), P(880, 0.12, 0.28, 0.4)],
+  /** Low, gentle pulse for periodic model activity; intentionally not sharp. */
+  work: [P(164.81, 0, 0.28, 0.12, 'triangle', 196), P(246.94, 0.12, 0.22, 0.07, 'sine', 220)],
 }
 
 /** Preset ids offered in the settings UI, in display order. */
